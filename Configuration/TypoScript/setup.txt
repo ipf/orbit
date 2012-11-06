@@ -1,0 +1,6 @@
+tt_content.orbit = COA
+tt_content.orbit {
+	wrap = <div class="orbit">|</div>
+	10 < tt_content.list.20.orbit_orbit
+	10.action = index
+}
