@@ -1,10 +1,10 @@
 <?php
-namespace Ipf\Orbit\Controller;
+namespace Ipf\Orbit\ViewHelpers;
 /* * *************************************************************
  *  Copyright notice
  *
  *  (c) 2012 Ingo Pfennigstorf <i.pfennigstorf@gmail.com>
- *  
+ *
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -25,13 +25,10 @@ namespace Ipf\Orbit\Controller;
  * ************************************************************* */
 
 /**
- * Controller for orbit slideshsow
+ * ViewHelper for splitting up images and returning them
  */
-class OrbitController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+class ImageViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
 
-	public function indexAction() {
-		$contentElement = $this->configurationManager->getContentObject()->data;
-		$this->view->assign('contentElement', $contentElement);
-	}
+	public function render() {}
 
 }

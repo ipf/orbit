@@ -4,3 +4,28 @@ tt_content.orbit {
 	10 < tt_content.list.20.orbit_orbit
 	10.action = index
 }
+
+plugin.tx_orbit {
+	elements {
+		header = TEXT
+		header.field = header
+
+		image = TEXT
+		image {
+		field = image
+		split {
+			token = ,
+			cObjNum = 1
+			1 {
+				10 = IMAGE
+				10 {
+					file {
+						maxW = 272
+						import.current = 1
+					}
+				}
+			}
+		}
+	}
+}
+}
