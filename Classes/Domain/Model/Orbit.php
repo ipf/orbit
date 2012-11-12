@@ -1,10 +1,10 @@
 <?php
-namespace Ipf\Orbit\ViewHelpers;
+
 /* * *************************************************************
  *  Copyright notice
  *
  *  (c) 2012 Ingo Pfennigstorf <i.pfennigstorf@gmail.com>
- *
+ *  
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -25,10 +25,35 @@ namespace Ipf\Orbit\ViewHelpers;
  * ************************************************************* */
 
 /**
- * ViewHelper for splitting up images and returning them
+ * Orbit container
  */
-class ImageViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
+class Orbit {
 
-	public function render() {}
+	/**
+	 * @var \TYPO\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\File>
+	 */
+	protected $images;
+
+	public function __construct() {
+		$this->initializeStorageObjects();
+	}
+
+	public function initializeStorageObjects() {
+		$this->categories = new \TYPO\CMS\Extbase\Persistence\ObjectStorage();
+	}
+
+	/**
+	 * @param \TYPO\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\File> $images
+	 */
+	public function setImages($images) {
+		$this->images = $images;
+	}
+
+	/**
+	 * @return \TYPO\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\File>
+	 */
+	public function getImages() {
+		return $this->images;
+	}
 
 }

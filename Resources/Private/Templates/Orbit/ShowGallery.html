@@ -1,0 +1,6 @@
+{namespace ipf=Ipf\Orbit\ViewHelpers}
+<div id="orbit-{galleryUid}" class="orbit">
+	<f:for each="{fileCollection}" as="image">
+		<f:image src="fileadmin{image.identifier}" alt="" />
+	</f:for>
+</div>

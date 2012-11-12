@@ -1,0 +1,2 @@
+$('.orbit').each ->
+	$(this).orbit()

@@ -1,3 +1,6 @@
-<div id="orbit-{contentElement.uid}">
-	<ipf:image src="{contentElement.image}" />
+{namespace ipf=Ipf\Orbit\ViewHelpers}
+<div id="orbit-{contentId}">
+	<f:for each="{images}" as="image">
+		<f:image src="{image.identifier}" alt="" />
+	</f:for>
 </div>
