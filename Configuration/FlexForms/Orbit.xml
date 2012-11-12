@@ -20,17 +20,6 @@
 					</config>
 				</TCEforms>
 			</settings.fileCollections>
-			<settings.allowDownload>
-				<TCEforms>
-					<label>
-						Alle Download
-					</label>
-					<config>
-						<type>check</type>
-						<default>0</default>
-					</config>
-				</TCEforms>
-			</settings.allowDownload>
 		</el>
 	</ROOT>
 </T3DataStructure>
