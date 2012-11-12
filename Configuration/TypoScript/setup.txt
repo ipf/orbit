@@ -32,4 +32,3 @@ plugin.tx_orbit {
 }
 
 page.includeJSFooter.zplugin_orbit = EXT:orbit/Resources/Public/JavaScript/Orbit.js
-page.includeJSFooter.zplugin_orbit.isLast = 1
