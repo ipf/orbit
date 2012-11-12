@@ -31,33 +31,6 @@
 					</config>
 				</TCEforms>
 			</settings.allowDownload>
-			<settings.enableLightbox>
-				<TCEforms>
-					<label>
-						Details in Lightbox
-					</label>
-					<config>
-						<type>check</type>
-						<default>0</default>
-					</config>
-				</TCEforms>
-			</settings.enableLightbox>
-			<settings.gallery.itemsPerPage>
-				<TCEforms>
-					<label>
-						Limit
-					</label>
-					<config>
-						<type>input</type>
-						<eval>int</eval>
-						<range>
-							<min>1</min>
-							<max>200</max>
-						</range>
-						<default>16</default>
-					</config>
-				</TCEforms>
-			</settings.gallery.itemsPerPage>
 		</el>
 	</ROOT>
 </T3DataStructure>
