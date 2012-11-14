@@ -1,2 +1,2 @@
 $('.orbit').each ->
-	$(this).orbit()
+	$(this).orbit({timer: 'false'})
